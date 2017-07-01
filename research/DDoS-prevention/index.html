@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>DDoS prevention - Apinf Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DDoS prevention";
+    var mkdocs_page_input_path = "research/DDoS-prevention.md";
+    var mkdocs_page_url = "/research/DDoS-prevention/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Apinf Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../UserInstructions/">UserInstructions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">UX</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../UX/API Usage Questions/">API Usage Questions</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../UX/Dashboard-UserInterview/">Dashboard UserInterview</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../UX/Persona_Aleksi Jokinen/">Persona Aleksi Jokinen</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">UserInterview</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../UX/UserInterview/EHR/">EHR</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../UX/UserInterview/RC/">RC</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../UX/UserInterview/SMA/">SMA</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../UX/UserInterview/SS/">SS</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Design</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../design/API-Status-Notification/">API Status Notification</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../design/APInf-MVP-UI-Specification/">APInf MVP UI Specification</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../design/Boilerplate-UI-Color-Schemas/">Boilerplate UI Color Schemas</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../design/Material-Design/">Material Design</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../design/User-Profile-Redesign/">User Profile Redesign</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">SaasMonetization</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <span class="caption-text">FutureIdeas</span>
+    <ul class="subnav">
+                <li class="toctree-l4">
+                    
+    <a class="" href="../../design/SaasMonetization/FutureIdeas/example/">Example</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Dashboard</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../design/dashboard/Prototype-Testing-Asim/">Prototype Testing Asim</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../design/dashboard/Prototype-Testing-Jarkko/">Prototype Testing Jarkko</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../design/dashboard/Prototype-Testing-Vesa/">Prototype Testing Vesa</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../design/dashboard/dashboard_design_brief/">Dashboard design brief</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Develop</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../develop/Code-Styleguide/">Code Styleguide</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../develop/Release-Versioning/">Release Versioning</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../develop/Roadmap/">Roadmap</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../develop/contributing/">Contributing</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Architecture</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Architecture/Permissions/">Permissions</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Architecture/Rate-Limit-Configuration/">Rate Limit Configuration</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Architecture/Rate-Limiting/">Rate Limiting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Architecture/Software-Technologies-Comparison/">Software Technologies Comparison</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Architecture/Technologies-Used-in-Apinf/">Technologies Used in Apinf</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Architecture/User-Roles-in-Apinf/">User Roles in Apinf</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Integration</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Integration/API-Umbrella-Response-Object/">API Umbrella Response Object</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Integration/Elasticsearch-data-structure/">Elasticsearch data structure</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/Integration/FIWARE_Summit_takeaways/">FIWARE Summit takeaways</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">MVP</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/MVP/MVP-Specification/">MVP Specification</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">REST API</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/REST-API/API-Design/">API Design</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Emq</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/emq/EMQ-elasticsearch-data-for-dashboard/">EMQ elasticsearch data for dashboard</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../develop/emq/emq-apinf-architecture/">Emq apinf architecture</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Ideas</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../ideas/APIOps_-_Builder_Backbone_of_Internet_of_Things/">APIOps   Builder Backbone of Internet of Things</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ideas/APIOps_-_builder_backbone_of_IoT/">APIOps   builder backbone of IoT</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ideas/Invitation_to_join_APIOps_-_APItalist_network/">Invitation to join APIOps   APItalist network</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ideas/apiops_-_apitalist_training_university/">Apiops   apitalist training university</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ideas/mqtt-proxy/">Mqtt proxy</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../ideas/op/">Op</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Organization</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../organization/communications-plan/">Communications plan</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Content</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/content/APInf_frontpage/">APInf frontpage</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Minutes</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2014-11-04-Sprint-34-Review-Meeint/">2014 11 04 Sprint 34 Review Meeint</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-01-04-Sprint20-Planning/">2015 01 04 Sprint20 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-04-07-Sprint-0-Planning/">2015 04 07 Sprint 0 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-04-13-Meeting-With-Jarkko/">2015 04 13 Meeting With Jarkko</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-04-17-Sprint-0-Review/">2015 04 17 Sprint 0 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-04-20-Sprint-1-Planning/">2015 04 20 Sprint 1 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-04-21-Needs-Assessment/">2015 04 21 Needs Assessment</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-05-04-Apinf-Sprint-2-Planning/">2015 05 04 Apinf Sprint 2 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-05-08-User-Personas-Session/">2015 05 08 User Personas Session</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-05-15-Sprint-2-Review/">2015 05 15 Sprint 2 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-05-18-Sprint-3-Planning/">2015 05 18 Sprint 3 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-05-29-Sprint-3-Retrospective/">2015 05 29 Sprint 3 Retrospective</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-05-29-Sprint-3-Review/">2015 05 29 Sprint 3 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-06-06-Sprint-04-Planning/">2015 06 06 Sprint 04 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-06-12-Sprint-4-Review/">2015 06 12 Sprint 4 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-06-15-Sprint-5-Planning/">2015 06 15 Sprint 5 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-06-26-Sprint-5-Review/">2015 06 26 Sprint 5 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-06-29-Sprint-6-Planning/">2015 06 29 Sprint 6 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-07-10-Sprint-6-Review/">2015 07 10 Sprint 6 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-07-13-Sprint-7-Planning/">2015 07 13 Sprint 7 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-07-15-Sprint-6-Retrospective/">2015 07 15 Sprint 6 Retrospective</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-07-24-Sprint-7-Review/">2015 07 24 Sprint 7 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-07-27-Sprint-8-Planning/">2015 07 27 Sprint 8 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-08-07-Sprint-8-Review/">2015 08 07 Sprint 8 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-08-10-Sprint-9-Planning/">2015 08 10 Sprint 9 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-08-14-Sprint-9-Review/">2015 08 14 Sprint 9 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-08-17-Sprint-10-Planning/">2015 08 17 Sprint 10 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-08-31-Sprint-10-Review-Meeting/">2015 08 31 Sprint 10 Review Meeting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-08-31-Sprint-11-Planning/">2015 08 31 Sprint 11 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-09-25-Sprint-12-Review/">2015 09 25 Sprint 12 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-09-28-Sprint-13-Planning/">2015 09 28 Sprint 13 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-10-09-Sprint-13-Review/">2015 10 09 Sprint 13 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-10-12-Sprint-14-Planning/">2015 10 12 Sprint 14 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-10-23-Sprint-14-Review/">2015 10 23 Sprint 14 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-10-26-Sprint-15-Planning/">2015 10 26 Sprint 15 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-11-06-Sprint-15-Review/">2015 11 06 Sprint 15 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-11-09-Sprint-16-Planning/">2015 11 09 Sprint 16 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-11-20-Sprint-16-Review/">2015 11 20 Sprint 16 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-11-23-Sprint-17-Planning/">2015 11 23 Sprint 17 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-12-04-Sprint-17-Review/">2015 12 04 Sprint 17 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2015-12-31-Sprint-19-Review/">2015 12 31 Sprint 19 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-01-15-Sprint-20-Review/">2016 01 15 Sprint 20 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-01-29-Sprint-22-Planning/">2016 01 29 Sprint 22 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-02-01-Sprint-22-Planning/">2016 02 01 Sprint 22 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-02-12-Sprint-22-Review/">2016 02 12 Sprint 22 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-06-03-Sprint-23-Review/">2016 06 03 Sprint 23 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-07-14-Sprint-26-Review/">2016 07 14 Sprint 26 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-07-18-Sprint-27-Planning/">2016 07 18 Sprint 27 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-07-29-Sprint-27-Review/">2016 07 29 Sprint 27 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-08-01-Sprint-28-Planning/">2016 08 01 Sprint 28 Planning</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-08-15-Sprint-29-Planning-Meeting-Minutes/">2016 08 15 Sprint 29 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-08-26-Sprint-29-Review/">2016 08 26 Sprint 29 Review</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-08-29-Sprint-30-Planning-Minutes/">2016 08 29 Sprint 30 Planning Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-09-12-Sprint-31-Planning-Meeting-Minutes/">2016 09 12 Sprint 31 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-09-23-Sprint-31-review-meeting/">2016 09 23 Sprint 31 review meeting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-09-26-Sprint32-Planning-Meeting-Minutes/">2016 09 26 Sprint32 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-10-07-Sprint-32-Review-Meeting/">2016 10 07 Sprint 32 Review Meeting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-10-21-Sprint33-Review-Meeting-Minutes/">2016 10 21 Sprint33 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-11-07-Sprint-35-Planning-Meeting-Minutes/">2016 11 07 Sprint 35 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-11-18-Sprint35-Review-Meeting-Minutes/">2016 11 18 Sprint35 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-11-21-Sprint36-Planning-Meeting-Minutes/">2016 11 21 Sprint36 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-12-02-APIKA-Sprint1-Review-Meeting-Minutes/">2016 12 02 APIKA Sprint1 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-12-05-APIKA-Sprint2-Planning-Meeting/">2016 12 05 APIKA Sprint2 Planning Meeting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-12-08-APIKA-open-issues-meeting minutes/">2016 12 08 APIKA open issues meeting minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-12-13-APIKA-status-meeting-minutes/">2016 12 13 APIKA status meeting minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-12-16-APIKA-Sprint2-Review-Meeting-Minutes/">2016 12 16 APIKA Sprint2 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2016-12-19-APIKA-Sprint3-Planning-Meeting-Minutes/">2016 12 19 APIKA Sprint3 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-01-05-APIKA-Sprint3-Review-Meeting-Minutes/">2017 01 05 APIKA Sprint3 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-01-08-APIKA-Sprint4-Planning-Meeting-Minutes/">2017 01 08 APIKA Sprint4 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-01-20-APIKA-Sprint4-Review-Meeting-Minutes/">2017 01 20 APIKA Sprint4 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-01-23-APIKA-Sprint5-Planning-Meeting-Minutes/">2017 01 23 APIKA Sprint5 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-02-03-APIKA-Sprint5-Review-Meeting-Minutes/">2017 02 03 APIKA Sprint5 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-02-06-Sprint36-Planning-Meeting-Minutes/">2017 02 06 Sprint36 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-02-17-Sprint36-Review-Meeting-Minutes/">2017 02 17 Sprint36 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-02-20-Sprint37-Planning-Meeting-Minutes/">2017 02 20 Sprint37 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-06-Sprint37-Review-Meeting-Minutes/">2017 03 06 Sprint37 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-06-Sprint38-Planning-Meeting-Meetings/">2017 03 06 Sprint38 Planning Meeting Meetings</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-14-team-self-reflection/">2017 03 14 team self reflection</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-15-leadership-team-meeting/">2017 03 15 leadership team meeting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-17-Sprint38-Review-Meeting-Minutes/">2017 03 17 Sprint38 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-20-Sprint39-Planning-Meeting-Minutes/">2017 03 20 Sprint39 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-03-31-Sprint39-Review-Meeting-Minutes/">2017 03 31 Sprint39 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-04-03-Sprint40-Planning-Meeting-Minutes/">2017 04 03 Sprint40 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-04-13-Sprint40-Review-Meeting-Minutes/">2017 04 13 Sprint40 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-04-18-Sprint41-Planning_Meeting-Minutes/">2017 04 18 Sprint41 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-04-28-Sprint41-Review Meeting/">2017 04 28 Sprint41 Review Meeting</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-05-02-Sprint42-Planning-Meeting-Minutes/">2017 05 02 Sprint42 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-05-12-Sprint42-Review-Meeting-Minutes/">2017 05 12 Sprint42 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-05-15-Sprint43-Planning-Meeting-Minutes/">2017 05 15 Sprint43 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-05-26-Sprint43-Review-Meeting-Minutes/">2017 05 26 Sprint43 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-06-12-Sprint45-Planning-Meeting-Minutes/">2017 06 12 Sprint45 Planning Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-06-22-Sprint45-Review-Meeting-Minutes/">2017 06 22 Sprint45 Review Meeting Minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/2017-06-26-Sprint45-retrospective-meeting-minutes/">2017 06 26 Sprint45 retrospective meeting minutes</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/Rotation/">Rotation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/minutes/Wrap-up-and-next-steps_2016-05-17/">Wrap up and next steps 2016 05 17</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Outreach</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/BountyProgram/">BountyProgram</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/EU-Codeweek-Hackathon/">EU Codeweek Hackathon</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/Mindtrek-Apinf-Launch-Workshop/">Mindtrek Apinf Launch Workshop</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/Mini-Hackathon/">Mini Hackathon</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/Outline-For-Apinf-Launch-Presentation/">Outline For Apinf Launch Presentation</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/Social-Media-Strategy/">Social Media Strategy</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../../organization/outreach/Social-Media-Tools-And-Practices/">Social Media Tools And Practices</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Research</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../API key per API/">API key per API</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../API_Community_Resources/">API Community Resources</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../API_Lifecycle/">API Lifecycle</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../API_Metadata_Standards/">API Metadata Standards</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../API_Monitoring_Service/">API Monitoring Service</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Capture_Track_Application_Exception/">Capture Track Application Exception</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">DDoS prevention</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#ddos-attack">DDoS attack</a></li>
+    
+
+    <li class="toctree-l3"><a href="#how-to-cope-with-brute-force-attack">How to cope with brute force attack?</a></li>
+    
+
+    <li class="toctree-l3"><a href="#optimizing-systems">Optimizing systems</a></li>
+    
+
+    <li class="toctree-l3"><a href="#attacks-in-different-osi-layers">Attacks in different OSI layers</a></li>
+    
+
+    <li class="toctree-l3"><a href="#layer-7-ddos-attack">Layer 7 DDoS attack</a></li>
+    
+
+    <li class="toctree-l3"><a href="#ddos-attack-on-presentation-layer">DDoS attack on presentation layer</a></li>
+    
+
+    <li class="toctree-l3"><a href="#syn-flood-mitigation">SYN Flood Mitigation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#layer-3-ddos-attack">Layer 3 DDoS Attack</a></li>
+    
+
+    <li class="toctree-l3"><a href="#smurf-attack-mitigation">Smurf attack mitigation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#layer-2-ddos-attack">Layer 2 DDoS Attack</a></li>
+    
+
+    <li class="toctree-l3"><a href="#layer-2-attack-mitigation">Layer 2 attack mitigation</a></li>
+    
+
+    <li class="toctree-l3"><a href="#references">References</a></li>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../DashboardHeuristicsEvaluation/">DashboardHeuristicsEvaluation</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Drill-down analytics endpoint/">Drill down analytics endpoint</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../Namespace for frontend-prefix/">Namespace for frontend prefix</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PSD2/">PSD2</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../UITesting/">UITesting</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../resources/">Resources</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Api catalogues</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-catalogues/_audit-template/"> audit template</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-catalogues/ibm/">Ibm</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-catalogues/">Home</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-catalogues/mashape/">Mashape</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-catalogues/programmableweb/">Programmableweb</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Api management</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management/audit-template/">Audit template</a>
+                </li>
+    </ul>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Api management tools</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/3scale/">3scale</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/_audit-template/"> audit template</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/akana/">Akana</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/api-axle/">Api axle</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/api-blueprint/">Api blueprint</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/apiary/">Apiary</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/apigee/">Apigee</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/axway/">Axway</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/ca-layer-7/">Ca layer 7</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/ibm-api-management/">Ibm api management</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/kong/">Kong</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/mashery/">Mashery</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/microsoft-azure-api-management/">Microsoft azure api management</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/mulesoft-anypoint/">Mulesoft anypoint</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/node-red/">Node red</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/open-repose/">Open repose</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/oracle-soa/">Oracle soa</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../api-management-tools/wso2/">Wso2</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Support</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../support/Adding-SOAP-API/">Adding SOAP API</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Apinf Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Research &raquo;</li>
+        
+      
+    
+    <li>DDoS prevention</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/apinf/docs/edit/master/docs/research/DDoS-prevention.md"
+          class="icon icon-github"> Edit on Github</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ddos-attack">DDoS attack</h1>
+<p>DDoS attack is type of attack, which causes performance issue to a server, or sometimes it even causes a server to stop functioning. The victims of DDoS attacks are usually servers that provide inbound and outbound traffic. Also, interfaces that are involved in exchanging information throughout the Internet, can be the target of the attacks. </p>
+<p>A DDoS attack would effectively disable access to the API. As mobile app penetration and usage grows, and bank customers use apps as their main channel to perform banking transactions, the impact an API attack can have on an economy grows exponentially. Customers are unable to pay bills, transfer money, or ensure they have funds to make purchases. </p>
+<p>”My website has been experiencing a denial of service/hack attack for the last week. The attack is hitting our web API with randomly generated invalid API keys in a loop.
+I'm not sure if they are trying to guess a key (mathematically impossible as 64bit keys) or trying to DOS attack the server. The attack is distributed, so I cannot ban all of the IP address, as it occurs from hundreds of clients.” case from stackoverflow.com</p>
+<h1 id="how-to-cope-with-brute-force-attack">How to cope with brute force attack?</h1>
+<p>A brute force attack simply uses cryptography algorithm. Using the algorithm the attackers made a program that automatically break into autentication systems. When we attempt to login and our page request is sent from the server to the client machine hackers are more active to access the account.
+The standard way to do this is by implementing a lockout or a progressive delay. A lockout prevents an IP from making a login request for X minutes if they fail to log in N times. A progressive delay adds a longer and longer delay to processing each bad login request. 
+Copin through some server-side preventions:
+Setting up an IDS system, like Snort, to detect when a DDOS attack is occurring and take the first steps to mitigate it
+Installing and configuring a web-application firewall, like mod_security, to reject incoming connections that violate rules that you define.
+Fail2Ban is able to reduce the rate of incorrect authentications attempts however it cannot eliminate the risk that weak authentication presents. 
+Increase the API key length to 128 (or 256, or 512) won't cost much, and you'll tremendously increase the search space 
+In case the application is deployed on cloud i.e, Amazon Web Services, it is possible to safegaurd the application with some services:
+- Use CloudFlare.
+- Consider using AWS API gateway as the second stage for your API requests. AWS API gateway provides filtering, throttling, security,auto-scaling and HA for your API. 
+- And then forward the valid requests to your machines (in or outside amazon)</p>
+<p>DDoS attack can be launched from numerous compromised devices, often distributed globally in what is referred to as a botnet. Motives for these attacks appear equally diverse such as personal reasons, the prestige, criminal, commercial, or ideological in nature.
+ People behind the DDoS attacks are:</p>
+<p>Extortionists: They menace to inactivate the web service and then ask for the ransom money to put a stop to an attack. </p>
+<p>Exfiltrators: They use a DoS attack to distract interest from their actual aim – stealing data for money in a form of intellectual property or credit card numbers. </p>
+<p>Hacktivists: They are different than rest of the opponents. They are irritated and look for making a political announcement or stand out a focus on a cause. </p>
+<p>Competitors: Your competitors may cause your site inactive to gain an advantage; or they might screen scratch information on your site, for example, to determine and beat your pricing.</p>
+<h1 id="optimizing-systems">Optimizing systems</h1>
+<p>Ahead to mitigating the DDoS attacks, the hardware/software systems must be optimized precisely. At software level, consider the following cases for the sake of optimization:</p>
+<p>The C10k problem is the problem of optimising network sockets to handle a large number of clients at the same time.</p>
+<p>OWASP Top Ten Cheat: </p>
+<p><img alt="Image from blogspot.com" src="http://1.bp.blogspot.com/-FzFzOfzb92I/USi8VWXPn9I/AAAAAAAABl8/K9rcqKxpkZE/s1600/OWASP+Top+10+-+2013+-+RC1_Page_07.jpg?raw=true" title="OWASP Risks" />
+Figure 1: OWASP Top 10 </p>
+<p>OWASP Mobile security awareness </p>
+<p><img alt="Image from blogspot.com" src="http://3.bp.blogspot.com/-9ijvyGcEjBQ/UM7usnFiTzI/AAAAAAAADpM/0oz23vmAl5k/s1600/OWASP-Top_10_risks.png?raw=true" title="OWASP Mobile" />
+Figure 2: OWASP Mobile security</p>
+<p>At hardware level, consider the following cases for the sake of optimization:</p>
+<p>Use loadbalancers to distribute the load of requests. Consider using Round-robin DNS, which returns multiple IP addresses and the user will connect to one of those IP addresses.
+Actively check/monitor servers to allow/disallow bots and crawlers. Sometimes, companies that are collecting statistical data about a website/webservice, are sending too many requests that causes performance issues.</p>
+<h1 id="attacks-in-different-osi-layers">Attacks in different OSI layers</h1>
+<p>To understand DDoS attacks, it is wise to abstract down the attacks to the layers of OSI (Open Systems Interconnection) model. Because the OSI reference model details each phase of the process involved to connect a computer to the network and communication of data, most of the researchers, developers and manufacturers use the OSI model as a common platform to improve network communications.
+<img alt="Image from s-media.com" src="https://s-media-cache-ak0.pinimg.com/originals/55/53/bd/5553bdf0a193142af2976db02c4bb920.gif?raw=true" title="OSI MODEL" />
+Figure 3: OSI model</p>
+<h1 id="layer-7-ddos-attack">Layer 7 DDoS attack</h1>
+<p>A Layer 7 DDoS attack is often perpetrated through the use of HTTP GET. The attacker looks like a legitimate connection, and is therefore passed on to the web or application server. The attacker begins requesting large numbers of files/objects using HTTP GET, so the server quickly becomes focused on responding to those requests and has a hard time responding to new, legitimate requests.</p>
+<p>An HTTP flood attack is a type of Layer 7 application attack that utilizes the standard valid GET/POST requests used to fetch information, as in typical URL data retrievals (images, information, etc.) during SSL sessions. 
+An HTTP GET/POST flood is a volumetric attack that does not use malformed packets, spoofing or reflection techniques. When rate-limiting was used to stop this type of attack, the bad guys moved to using a distributed system of bots (zombies) to ensure that the requests (attack) was coming from myriad IP addresses and was therefore not only more difficult to detect, but more difficult to stop. 
+The attacker uses malware and trojans to deposit a bot on servers and clients, and then remotely includes them in his attack by instructing the bots to request a list of objects from a specific site or server. The attacker might not use bots, but instead might gather enough evil friends to launch an attack against a site that has annoyed them for some reason. </p>
+<p>Layer 7 DDoS attacks are more difficult to detect because the TCP connection is valid and so are the requests. Application monitoring is the practice of monitoring software applications using a dedicated set of algorithms, technologies, and approaches to detect zero day and application layer (Layer 7 attacks). Once identified these attacks can be stopped and traced back to a specific source more easily than other types of DDoS attacks. 
+Layer 7 firewall (application firewall) gets smarter about stopping layer 7 DDoS attacks without affecting legitimate clients. It is a subtle dance and requires a bit more understanding of the application and its flow, but if implemented correctly it can improve the ability of such devices to detect and prevent layer 7 DDoS attacks from reaching web and application servers and taking a site down.
+DDoS attack involves sending malformed SSL requests to target SSL servers and attempt to exhaust the servers’ resources, and thus deny service from legitimate users. </p>
+<h1 id="ddos-attack-on-presentation-layer">DDoS attack on presentation layer</h1>
+<p>Pushdo botnet is an example tool which sends garbage data toward the target SSL server. To mitigate, consider options like offloading the SSL from the origin infrastructure and inspecting the application traffic for signs of attacks traffic or violations of policy at an applications delivery platform (ADP). A good ADP will also ensure that your traffic is then reencrypted and forwarded back to the origin infrastructure with unencrypted content only ever residing in protected memory on a secure bastion host.</p>
+<p>Telnet communication sniffing is an example of DDoS attack that targets the session layer. The most critical issue in Telnet protocol is the lack of encryption. Every transmission between communicating parties over the network is sent in plain text. Of course, it is a vulnerability in the protocol and being exploited by the attackers for frame sniffing. The attacker can easily sniff the plain information flowing over the network.</p>
+<p>SYN Flood is an example of attacks that target transport layer. SYN Flood works by establishing half-open connections to a node. When the target receives a SYN packet to an open port, the target will respond with a SYN-ACK and try to establish a connection. However, during a SYN flood, the three-way handshake never completes because the client never responds to the server's SYN-ACK. As a result, these "connections" remain in the half-open state until they time out. This causes reaching bandwidth or connection limits of hosts or networking equipment. </p>
+<h1 id="syn-flood-mitigation">SYN Flood Mitigation</h1>
+<p>DDoS attack blocking, commonly referred to as blackholing, is a method typically used by ISPs to stop a DDoS attack on one of its customers. This approach to block DDoS attacks makes the site in question completely inaccessible to all traffic, both malicious attack traffic and legitimate user traffic. Blackholing is typically deployed by the ISP to protect other customers on its network from the adverse effects of DDoS attacks such as slow network performance and disrupted service.</p>
+<h1 id="layer-3-ddos-attack">Layer 3 DDoS Attack</h1>
+<p>Layer 3 infrastructure DDoS attack method uses ICMP messages to overload the targeted network's bandwidth. Attacks on the ICMP protocol, including smurf attacks, ICMP floods, and ping floods. Huge numbers of ICMP requests are sent to the victim's IP address. The source destination IP address is spoofed. The hosts on the victim's network respond to the ICMP requests, which creates a significant amount of traffic on the victim’s network, resulting in consumption of bandwidth and ultimately causing the victim’s server to crash. </p>
+<h1 id="smurf-attack-mitigation">Smurf attack mitigation</h1>
+<p>To prevent a smurf attack, individual hosts and routers can be configured to be non-responsive to external ping requests or broadcasts. Routers can also be configured to ensure that packets directed to broadcast addresses are not forwarded.</p>
+<h1 id="layer-2-ddos-attack">Layer 2 DDoS Attack</h1>
+<p>The most critical attacks at the data link layer involve Content Address Table (CAM) exhaustion, ARP spoofing, DHCP starvation attacks, MAC address spoofing, VLAN attacks and many more. 
+These attacks generally disrupt the normal traffic flow from sender to receiver. The aim of the MAC Flooding is to takedown this MAC Table. In a typical MAC Flooding attack, the attacker sends Ethernet Frames in a huge number. When sending many Ethernet Frames to the switch, these frames will have various sender addresses. The intention of the attacker is consuming the memory of the switch that is used to store the MAC address table. The MAC addresses of legitimate users will be pushed out of the MAC Table. Now the switch cannot deliver the incoming data to the destination system. So considerable number of incoming frames will be flooded at all ports. MAC Address Table is full and it is unable to save new MAC addresses. It will lead the switch to enter into a fail-open mode and the switch will now behave same way as a network hub. It will forward the incoming data to all ports like a broadcasting. </p>
+<p>Let’s see what are the benefits of the attacker with the MAC Flooding attack. As the attacker is a part of the network, the attacker will also get the data packets intended for the victim machine. So that the attacker will be able to steal sensitive data from the communication of the victim and other computers. Usually a packet analyzer is used to capture these sensitive data. 
+After launching a MAC Flood attack successfully, the attacker can also follow up with an ARP spoofing attack. This will help the attacker retaining access to the privileged data even after the attacked switches recover from the MAC Flooding attack. 
+The ARP Spoofing is an attack where the attacker sends falsified ARP Messages (Address Resolution Protocol) so that the attackers MAC address will be linked with the IP address of a legitimated user in the network. 
+The Address Resolution Protocol is a protocol used by the Internet Protocol usually by the IPv4 to map the IP address of a machine to a physical address like MAC address, also called Ethernet address. </p>
+<h1 id="layer-2-attack-mitigation">Layer 2 attack mitigation</h1>
+<p>We can prevent the MAC Flooding attack with various methods.
+Port Security, switches are configured to limit the number of MAC addresses that can be learned on ports connected to the end stations. Also a small table of ‘secure’ MAC addresses is maintained with the traditional MAC address table. This table also acts as a subset of the MAC address table. Cisco switches are available with in-built port security system.</p>
+<p>Authentication with AAA server, is a server program that handles user requests for access to computer resources and, for an enterprise, provides authentication, authorization, and accounting (AAA) services.</p>
+<p>Security measures to prevent ARP Spoofing or IP Spoofing</p>
+<p>Implement IEEE 802.1X suites, will allow packet filtering rules to be installed explicitly by an AAA server based on dynamically learned information about clients, including the MAC address.</p>
+<p>Attacks on physical layer include physical destruction, obstruction, manipulation and malfunctioning of physical media, which leads to its unavailability to the intended users. It requires the repair to make the physical media resources available.</p>
+<h1 id="references">References</h1>
+<p>https://en.wikipedia.org/wiki/C10k_problem</p>
+<p>https://en.wikipedia.org/wiki/Ping_of_death</p>
+<p>http://www.cisco.com/c/en/us/about/security-center/guide-ddos-defense.html</p>
+<p>https://blog.thousandeyes.com/three-types-ddos-attacks/</p>
+<p>http://ddosattackprotection.org/blog/layer-7-ddos-attack/</p>
+<p>https://www.us-cert.gov/sites/default/files/publications/DDoS%20Quick%20Guide.pdf</p>
+<p>https://devcentral.f5.com/articles/layer-4-vs-layer-7-dos-attack</p>
+<p>https://documentation.meraki.com/MR/Firewall_and_Traffic_Shaping/Layer_3_and_7_Firewall_Processing_Order</p>
+<p>https://security.radware.com/ddos-knowledge-center/ddospedia/ssl-garbage-flood/</p>
+<p>http://www.tandfonline.com/doi/full/10.1080/21642583.2016.1241193</p>
+<p>http://www.tandfonline.com/doi/full/10.1080/21642583.2016.1241193?cookieSet=1</p>
+<p>https://www.interserver.net/tips/kb/mac-flooding-prevent/</p>
+<p>http://www.inetdaemon.com/tutorials/basic_concepts/network_models/osi_model/real_world_example.shtml</p>
+<p>https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet</p>
+<p>http://stackoverflow.com/questions/32575924/how-to-stop-hack-dos-attack-on-web-api</p>
+<p>http://1.bp.blogspot.com/-FzFzOfzb92I/USi8VWXPn9I/AAAAAAAABl8/K9rcqKxpkZE/s1600/OWASP+Top+10+-+2013+-+RC1_Page_07.jpg [Figure 1]</p>
+<p>http://3.bp.blogspot.com/-9ijvyGcEjBQ/UM7usnFiTzI/AAAAAAAADpM/0oz23vmAl5k/s1600/OWASP-Top_10_risks.png [Figure 2]</p>
+<p>https://s-media-cache-ak0.pinimg.com/originals/55/53/bd/5553bdf0a193142af2976db02c4bb920.gif [Figure 3]</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../DashboardHeuristicsEvaluation/" class="btn btn-neutral float-right" title="DashboardHeuristicsEvaluation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Capture_Track_Application_Exception/" class="btn btn-neutral" title="Capture Track Application Exception"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>CreativeCommons Zero (public domain)</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Capture_Track_Application_Exception/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../DashboardHeuristicsEvaluation/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
